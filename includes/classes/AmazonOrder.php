@@ -226,7 +226,7 @@ class AmazonOrder extends AmazonOrderCore{
             $d['BuyerEmail'] = (string)$xml->BuyerEmail;
         }
         if (isset($xml->BuyerIdentificationInformation)){
-            $d['BuyerIdentificationInformation'] = (string)$xml->BuyerIdentificationInformation;
+            $d['BuyerIdentificationInformation'] = $xml->BuyerIdentificationInformation;
         }
         if (isset($xml->BuyerCounty)){
             $d['BuyerCounty'] = (string)$xml->BuyerCounty;
