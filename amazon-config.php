@@ -1,6 +1,6 @@
 <?php
 
-$countries = ['fr', 'uk', 'it', 'es', 'de', 'tr'];
+$countries = ['fr', 'uk', 'it', 'es', 'de', 'tr', 'nl', 'sg', 'se'];
 
 foreach ($countries as $country) {
     $store['amazonStore'.$country]['marketplaceId'] = config('services.amazon_mws.marketplace_id_'.$country);
