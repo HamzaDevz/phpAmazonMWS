@@ -36,6 +36,14 @@ abstract class AmazonFeedsCore extends AmazonCore
     {
         parent::__construct($s, $mock, $m, $config);
         include($this->env);
+        if (file_exists($this->config))
+        {
+            include($this->config);
+        }
+        else
+        {
+            throw new Exception('Config file does not exist!');
+        }
 
         $this->urlbranch = '';
         if (isset($AMAZON_VERSION_FEEDS))
