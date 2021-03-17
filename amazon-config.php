@@ -5,6 +5,10 @@ $amazonConfigPerCountries = [
         'marketplace' => 'A2Q3Y263D00KWC',
         'endpoint'    => 'https://mws.amazonservices.com/',
     ],
+    'pl' => [
+        'marketplace' => 'A1C3SOZRARQ6R3',
+        'endpoint'    => 'https://mws-eu.amazonservices.com/',
+    ],
     'ca' => [
         'marketplace' => 'A2EUQ1WTGCTBG2',
         'endpoint'    => 'https://mws.amazonservices.ca/',
